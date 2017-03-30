@@ -7,13 +7,18 @@
   ],
   "version": "0.1.1",
   "main": "index.js",
-  "engines": { 
-    "node": ">=0.4.x"
+  "engines": {
+    "node": ">=6.x"
   },
   "dependencies": {
     "debug": "*"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "3.16.1",
+    "eslint-config-standard": "6.2.1",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "2.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "http://github.com/DamonOehlman/plug.git"
@@ -21,5 +26,12 @@
   "bugs": {
     "url": "http://github.com/DamonOehlman/plug/issues"
   },
-  "contributors": []
+  "contributors": [
+    "butlerx"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "eslint . && node test/connect.js",
+    "fix": "eslint . --fix"
+  }
 }

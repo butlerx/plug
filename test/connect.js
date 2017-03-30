@@ -1,9 +1,7 @@
-var assert = require('assert'),
-    Plugger = require('../').Plugger,
-    _plugger;
+const Plugger = require('../').Plugger
 
-describe('load plugins in a directory', function() {
-    it('should be able to create a new plugger', function() {
-        _plugger = new Plugger();
-    });
-});
+describe('load plugins in a directory', () => {
+  it('should be able to create a new plugger', () => {
+    let _plugger = new Plugger()
+  })
+})
